@@ -1,0 +1,19 @@
+<div class="full-width-container">
+    <div class="app-container">
+      <div class="data-fields-container">
+        <div><label for="birthDayField" class="strng-input-labels">Day</label><input type="number" id="birthDayField" [(ngModel)] = "birthDay" class="date-fields"></div>
+        <div><label for="birthMonthField" class="strng-input-labels">Month</label><input type="number" id="birthMonthField" [(ngModel)] = "birthMonth" class="date-fields"></div>
+        <div><label for="birthYearField" class="strng-input-labels">Year</label><input type="number"id="birthYearField" [(ngModel)] = "birthYear"class="date-fields"></div>
+      </div>
+      <div class="thin-line"></div>
+      <button class="calc-age-btn" (click)="calculateAge()"></button>
+      <div class="result-container">
+        <div class="big-txt"><span>{{age.years}}</span> years</div>
+        <div class="big-txt"><span>{{age.months}}</span> months</div>
+        <div class="big-txt"><span>{{age.days}}</span> days</div>
+      </div>
+    </div>
+    <div class="footer">
+      <span>Challenge by <a [href]="frontEndMentorLink">Frontend Mentor</a>. Coded by <a [href]="AuthorLink">{{Author}</a>}.</span>
+    </div>
+</div>
